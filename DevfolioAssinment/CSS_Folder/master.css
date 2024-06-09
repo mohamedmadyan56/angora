@@ -1,0 +1,468 @@
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/hero-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.navbar .nav-link {
+    position: relative;
+}
+
+section{
+
+margin-top: 100px;    
+}
+
+.nav-link.active::after{
+    width: 100% !important;
+}
+
+.typingClass::after{
+    content: "";
+    animation-name: typingSkill;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes typingSkill{
+
+    0%{ content: "|"; }
+
+    2% { content: "D|"; }
+    4% { content: "De|"; }
+    6% { content: "Dev|"; }
+    8% { content: "Deve|"; }
+    10% { content: "Devel|"; }
+    12% { content: "Develo|"; }
+    14% { content: "Develop|"; }
+    16% { content: "Develope|"; }
+    18% { content: "Developer|"; }
+    30% { content: "Develope|"; }
+    30% { content: "Develop|"; }
+
+    100%{  }
+
+}
+
+
+
+
+
+
+
+
+
+
+.navbar .nav-link::after {
+content: '';
+height: 2px;
+width: 0%;
+position: absolute;
+background-color: #fff;
+bottom: 0;
+left: 0;
+transition: all .5s;
+}
+
+.navbar .nav-link:hover::after {
+width: 100%;
+}
+
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: 0 solid transparent !important;
+    border-bottom: 0;
+    border-left: 0 solid transparent !important;
+}
+
+.landing-caption h1 {
+    font-weight: 600;
+    line-height: 86px;
+    font-size: 72px;
+  
+}
+.landing-caption span {
+    font-weight: 600;
+    line-height: 60px;
+    font-size: 40px;
+   
+}
+.navbar .nav-item {
+    width: fit-content !important;
+}
+
+
+
+.inner .circle {
+width: 150px;
+height: 150px;
+display: block;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: auto;
+font-size: 50px;
+border: solid 10px #0078FF;
+transition: all .6s;
+}
+
+
+
+.inner:hover .circle  {
+    background-color: #0078FF;
+    color: #fff;
+    border: solid 10px #CDE1F8;
+}
+
+
+
+
+#counter {
+    padding: 100px 0;
+    background-image:linear-gradient(rgba(0,120,255,.7),rgba(0,120,255,.5)),url(../images/counters-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+#counter .cycle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 8px solid #CDE1F8;
+}
+
+#Portfolio{
+    background-color: #F5F5F5;
+}
+#Portfolio .inner-caption {
+    padding-left: 40px;
+    background-color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+
+#Portfolio .inner-caption .spaniol {
+    color: #0078FF;
+}
+
+
+#Portfolio .inner .inner-img {
+transition: all .5s;
+overflow: hidden;
+}
+
+
+#Portfolio .inner:hover img {
+    transform: scale(1.5);
+} 
+#Portfolio .inner-caption .circle-two {
+color: #0078FF;
+width: 50px;
+height: 50px;
+border: 5px solid #0078FF;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 20px;
+}
+
+
+
+
+.carousel-item img {
+    width: 100px;
+    height: 100px;
+    border-radius:50% ;
+
+}
+
+#testimonial {
+    background-image:linear-gradient(rgba(23,106,215,.7),rgba(23,106,215,.7)),url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+
+}
+
+
+
+
+#Blog .card-body .category {
+    background-color: #0078FF;
+    display: inline-block;
+    text-align: center;
+}
+
+
+#Blog .card-body .card-box-travel{
+    display: inline-block;
+    color: #fff;
+    padding: 0 15px 5px;
+    overflow: hidden;
+    background-color: #0078ff;
+    border-radius: 4px
+}
+#Blog .card-box  {
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    top: -20px;
+    left: 15px;
+    right: 15px;
+    line-height: 25px;
+    overflow: hidden
+}
+  #Blog  .card-footer .avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+
+
+  }
+  
+  #contact .button-sub {
+    display: inline-block;
+    margin-left: 200px;
+    margin-top: 30px !important;
+  }
+  #contact .title-box-2 i {
+    color: #0078FF;
+    margin-right: 10px;
+  }
+  #contact .icons i {
+    margin-top: 30px;
+    display: inline-block;
+    color: black;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid #0078FF;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: all .5s;
+  }
+
+  #contact .icons span:hover i {
+    background-color: #0078FF;
+    border: 5px solid #CFD8EF;
+  }
+  .title-box-2 h4  {
+    position: absolute;
+    top: -48px;
+    color: black;
+
+}
+#Services .inner-card .circle {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 20px;
+
+}
+#Services .inner-card i {
+    font-size: 40px;
+    display: flex;
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+   
+    border: 9px solid #0078FF;
+    border-radius:50% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#Services .inner-card {
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#Portfolio .port-content span {
+    font-size: 15px;
+}
+#Portfolio .port-content .bluespan {
+    color: #0078FF;
+    font-size: 15px;
+}
+
+.port-icon .plus {
+    width: 40px;
+    display: block;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid #0078FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+
+    margin-top: 8px;
+}
+.port-icon .plus i {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #0078FF;
+}
+#Portfolio .portfolio-inner {
+    background-color: #FFFFFF;
+}
+
+
+#Portfolio {
+    padding: 50px 0;
+}
+
+
+.port-img{
+    overflow: hidden;
+    padding-bottom: 0px !important;
+}
+.portfolio-inner img {
+    transition: all .4s;
+}
+
+.portfolio-inner:hover img {
+    transform: scale(1.5);
+}
+
+
+
+
+
+
+
+
+.port-img img{
+    width: 500px;
+}
+.port-content h5 {
+    font-size: 15px;
+}
+.port-content span {
+    font-size: 10px !important;
+}
+
+h2::after {
+content: '';
+position: absolute;
+height: 3px;
+width: 100px;
+background-color: #0078FF;
+left: 0;
+bottom: 0;
+}
+#Services .lorex::after {
+   content: '';
+   position: absolute;
+   height: 3px;
+   width: 50px;
+   background-color: #0078FF;
+   margin: 30px -200px;
+}
+#Portfolio .lorex::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 50px;
+    background-color: #0078FF;
+    margin: 30px -200px;
+ }
+ #Blog .lorex::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 50px;
+    background-color: #0078FF;
+    margin: 30px -200px;
+ }
+ 
+
+
+ #contact {
+    background-image:linear-gradient(rgba(72,151,237,.5),rgba(72,151,237,.5)),url(../images/overlay-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+ } 
+ #contact .container {
+    background-color: #fff;
+    padding-top:100px ;
+    padding-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+ }
+
+
+
+ #contact .zx::after {
+content: '';
+width: 200px;
+height: 3px;
+background-color: #0078FF;
+position: absolute;
+bottom: -9px;
+left: 5px;
+ }
+
+ #contact .eltop::after {
+    content: '';
+width: 100px;
+height: 3px;
+background-color: #0078FF;
+position: absolute;
+bottom: -9px;
+left: 5px;
+ }
